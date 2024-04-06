@@ -16,8 +16,16 @@
 
 // Your code goes here...
 
+function doesArrayIncludeItemsBetweenVals(arr, val1, val2){
+  for (let elem of arr) {
+    if (elem > val1 && elem < val2) {
+      return true;
+    }
+  }
+  return false;
+}
 
-
+console.log(doesArrayIncludeItemsBetweenVals([2, 4, 2], 3, 5))
 
 /**
  * ====================================================
@@ -36,9 +44,30 @@
 
 // Your code goes here...
 
+function getValueWithConditionOne (num1, num2){
+  if (num1===40 && num2===40){
+    return num1 + num2;
+  }
+  return (num1 + num2)*2;
+}
 
 
+// Arrow function with Expicit return
+const getValueWithConditionTwo = (num1, num2) => {
+  if (num1===40 && num2===40){
+    return num1 + num2;
+  }
+  return (num1 + num2)*2;
+}
 
+
+//function expression (with anonymous function)
+const getValueWithConditionThree = function (num1, num2) {
+  if (num1===40 && num2===40){
+    return num1 + num2;
+  }
+  return (num1 + num2)*2;
+}
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-3"
 // If the test has all tests passed, switch to the next exercise file

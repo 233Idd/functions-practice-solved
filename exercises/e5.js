@@ -12,7 +12,12 @@
  */
 
 // Your code goes here...
-
+function getDiffTwentySeven (num) {
+  if (num > 27){
+    return Math.abs(27-num)*2;
+  }
+  return (27-num);
+}
 
 
 
@@ -25,8 +30,16 @@
 
 // Your code goes here
 
-
-
+const sumOfTwoIntegers = function(num1, num2) {
+  if (Number.isInteger(num1) && Number.isInteger(num2)) {
+  if (num1===num2){
+    return (num1+num2)*3;
+  }
+  return (num1+num2);
+}
+return "Numbers should be integers."
+}
+//Tried using for statement for above but kept getting error message.
 
 /** =========================
  * Create a isOneOfThemOrTheirSumIsFourty(num1, num2) function to check two given numbers and return a boolean.
@@ -38,7 +51,12 @@
  */
 
 // Your code goes here...
-
+const isOneOfThemOrTheirSumIsFourty =(num1, num2) =>{ 
+  if ((num1===40 || num2===40) || (num1+num2==40)){
+   return true;
+}
+   return false;
+}
 
 
 
